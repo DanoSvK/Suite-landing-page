@@ -90,6 +90,10 @@ a {
     color: var(--footer-text);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .container {
     padding: 0 1rem;
@@ -97,6 +101,7 @@ a {
 
 header p {
     padding-bottom: 32px;
+    color: var(--main-text);
 }
 
 .nav-bar {
@@ -107,10 +112,11 @@ header p {
     padding-bottom: 50px;
 }
 
-h1 {
+.header-content h1 {
     font-size: 2.375rem;
     line-height: 2.75rem;
     letter-spacing: -0.0331rem;
+    max-width: 343px;
 }
 
 span {
@@ -146,6 +152,7 @@ article {
     padding-bottom: 4rem;
     padding-top: 13.75rem;
     margin-top: 12.5rem;
+    border-radius: .9375rem;
 }
 
 article p {
