@@ -9,21 +9,66 @@
     <title>Suite landing page</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="nav-bar">
-                <a href="#"><img src="./assets/logo.svg" width="81px" height="32px" alt="logo stránky"></a>
-                <a class="header-btn" href="#">Request beta access</a>
-            </div>
+    <header class="container">
+        <div class="nav-bar">
+            <a href="#"><img src="./assets/logo.svg" width="81px" height="32px" alt="logo stránky"></a>
+            <a class="secondary-btn" href="#">Request beta access</a>
         </div>
-        <div class="container">
-            <section class="header-content">
-                <h1>A super solution for your business.</h1>
-                <p>Our marketing and sales automations help you scale your outreach to get more leads for your company.</p>
-                <a href="#">Request beta text</a>
-            </section>
-        </div>
+        <section class="header-content">
+            <h1>A super <span>solution</span> for your business.</h1>
+            <p>Our marketing and sales automations help you scale your outreach to get more leads for your company.</p>
+            <a class="primary-btn" href="#">Request beta text</a>
+        </section>
     </header>
+    <main>
+        <section class="container">
+            <picture>
+                <source media="(min-width: 1340px)"
+                        srcset="./assets/image-hero-portrait.webp,
+                                    ./assets/image-hero-portrait@2x.webp">
+                <source media="(min-width: 768px)"
+                        srcset="./assets/image-hero-portrait-tablet.png">
+                <img class="mobile-image" src="./assets/image-hero-landscape.webp" alt="">
+            </picture>
+        </section>
+        <section class="figures">
+                <h2>2K +</h2>
+                <p class="info">companies</p>
 
+                <h2>8</h2>
+                <p class="info">languages</p>
+
+                <h2>1.2M</h2>
+                <p class="info">leads</p>
+        </section>
+        <article>
+            <div class="jeremy">
+                <picture>
+                    <source media="(min-width: 1340px)"
+                        srcset="./assets/image-jeremy-large.webp,
+                                    ./assets/image-jeremy-large@2x.webp">
+                    <source media="(min-width: 768px)"
+                        srcset="./assets/image-jeremy-small-tablet.webp">
+                    <img src="./assets/image-jeremy-small.webp" alt="">
+                </picture>
+            </div>
+            <div class="quote">
+                <img src="./assets/pattern-curved-line-2.svg" alt="">
+                <h2>It just <strong>works.</strong></h2>
+                <blockquote>“I really like how it is an all-in-one solution that handle many of the tasks that you would normally need separate tools to do the same job. This thing is a miracle worker.”</blockquote>
+                <p><strong>Jeremy Robinson</strong></p>
+                <p class="info">CMO, FYLO</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer container">
+            <a href="#"><img src="./assets/logo.svg" width="81px" height="32px" alt="logo stránky"></a>
+            <p class="info">Copyright – Suite</p>
+            <li><img src="./assets/icon-facebook.svg" alt=""></li>
+            <li><img src="./assets/icon-instagram.svg" alt=""></li>
+            <li><img src="./assets/icon-twitter.svg" alt=""></li>
+        </div>
+    </footer>
 </body>
 </html>

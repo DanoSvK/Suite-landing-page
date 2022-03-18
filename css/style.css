@@ -1,16 +1,102 @@
+:root {
+    --heading: #172339;
+    --main-text: #49566D;
+    --footer-text: #F3EDE7;
+    --footer-heading: #FAF8F6;
+}
+
+/*--------------
+    Typography
+  --------------*/
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+    letter-spacing: -0.0625rem;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.0313rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: -0.0125rem;
+}
+
+.info {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: 0;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+    letter-spacing: 0;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: 0;
 }
+
+footer {
+    font-size: .9375rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+}
+
+/*--------------
+    Buttons
+  --------------*/
 
 a {
     text-decoration: none;
     text-transform: capitalize;
+    display: inline-block;
 }
+
+.primary-btn {
+    padding: .9375rem 2rem;
+    color: var(--footer-heading);
+    background-color: var(--heading);
+    border-radius: .375rem;
+    font-size: 1.125rem;
+    letter-spacing: -0.0112rem;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+}
+
+.secondary-btn {
+    padding: .75rem .9375rem;
+    color: var(--heading);
+    border: .0625rem solid var(--heading);
+    border-radius: .375rem;
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+}
+
+.secondary-btn:hover {
+    background-color: var(--heading);
+    color: var(--footer-text);
+}
+
 
 .container {
     padding: 0 1rem;
+}
+
+header p {
+    padding-bottom: 32px;
 }
 
 .nav-bar {
@@ -18,19 +104,78 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 1.5rem;
-}
-
-.header-btn {
-    padding: .75rem 1rem;
-    border: 1px solid black;
-    border-radius: .3125rem;
-    color: black;
-    text-decoration: none;
-    text-transform: capitalize;
+    padding-bottom: 50px;
 }
 
 h1 {
     font-size: 2.375rem;
     line-height: 2.75rem;
     letter-spacing: -0.0331rem;
+}
+
+span {
+    background: url(/assets/pattern-curved-line-1.svg);
+    background-repeat: no-repeat;
+    background-size: 140px;
+    padding-top: 15px;
+}
+
+.mobile-image {
+    margin-top: 3.4375rem;
+}
+
+.figures h2 {
+    margin-bottom: 0;
+    color: var(--heading);
+}
+
+.figures .info {
+    margin-top: 0;
+    color: var(--main-text)
+}
+
+.figures {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article {
+    background-color: var(--heading);
+    color: var(--footer-text);
+    position: relative;
+    padding-bottom: 4rem;
+    padding-top: 13.75rem;
+    margin-top: 12.5rem;
+}
+
+article p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.jeremy {
+    text-align: center;
+    position: absolute;
+    top: -10.625rem;
+    left: 50%;
+    margin-left: -121px;
+}
+
+.quote {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    
+    padding: 50px 0;
+}
+
+footer {
+    background-color: var(--footer-text);
+}
+
+li {
+    display: inline;
+    padding: 0 13px;
 }
