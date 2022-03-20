@@ -9,6 +9,10 @@
     Typography
   --------------*/
 
+svg:hover {
+    opacity: .5
+}
+
 h1 {
     font-size: 4.5rem;
     line-height: 4.875rem;
@@ -19,7 +23,7 @@ h1 {
 h2 {
     font-size: 3rem;
     line-height: 3.5rem;
-    letter-spacing: -0.0313rem;
+    letter-spacing: -0.5px;
     font-weight: 700;
 }
 
@@ -34,7 +38,6 @@ h3 {
     font-size: 1rem;
     line-height: 1.625rem;
     letter-spacing: 0;
-    font-weight: 700;
 }
 
 blockquote {
@@ -162,6 +165,7 @@ article {
     padding-top: 13.75rem;
     margin-top: 12.5rem;
     border-radius: .9375rem;
+    height: 670px;
 }
 
 article p {
@@ -184,7 +188,12 @@ article p {
 }
 
 .quote {
+    position: absolute;
+    bottom: 64px;
+    margin-top: 400px;
     text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .footer {
@@ -199,6 +208,18 @@ footer {
 li {
     display: inline;
     padding: 0 13px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li:first-child {
+    padding-left: 0;
+}
+
+li:last-child {
+    padding-right: 0;
 }
 
 .bg {
@@ -229,7 +250,6 @@ li {
         line-height: 4rem;
         letter-spacing: -0.78px;
         max-width: 500px;
-        font-weight: 700;
     }
 
     .header-content p {
@@ -254,6 +274,29 @@ li {
         padding-bottom: 80px;
     }
 
+    article {
+        position: relative;
+        margin-left: 40px;
+        margin-right: 40px;
+        max-height: 750px;
+        top: 280px;
+        margin-top: -150px;
+    }
+
+    .quote {
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+    .quote h2 {
+        margin-top: 100px;
+    }
+
+    .quote p {
+        font-size: 1.1875rem;
+        line-height: 2rem;
+    }
+
     .footer {
         display: flex;
         justify-content: space-between;
@@ -262,10 +305,13 @@ li {
         padding-bottom: 72px;
     }
 
-    article {
+    footer {
+        height: 500px; 
+    }
+
+    .footer {
         position: relative;
-        margin-left: 40px;
-        margin-right: 40px;
+        top: 290px;   
     }
 
     ul {
@@ -279,6 +325,86 @@ li {
     li:last-child {
         padding-right: 0;
     }
+}
 
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 165px;
+    }
+
+    article {
+        margin-left: 165px;
+        margin-right: 165px;
+        max-height: 545px;
+        top: 280px;
+    }
+
+    header {
+        max-width: 90rem;
+    }
+
+    .header-content h1 {
+        font-size: 4.5rem;
+        line-height: 4.875rem;
+        letter-spacing: -1px;
+        max-width: 635px;
+    }
+
+    .header-content p {
+        max-width: 30%;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        letter-spacing: 0.1px;
+    }
     
+    .hero {
+        right: 450px;
+        z-index: -1;
+        max-width: 700px;
+    }
+
+    .figures {
+       position: absolute;
+       top: 50%;
+       margin-top: -80px;
+       right: 80px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       max-width: 90px;
+    }
+
+    .jeremy {
+        left: 250px;
+        top: -45px;
+    }
+
+    .curved-line {
+        transform: translateY(-100px)
+    }
+
+    .quote {
+        max-width: 450px;
+        max-height: 369px;
+        text-align: left;
+        right: 100px;
+        bottom: 128px;
+    }
+
+    .quote p {
+        font-size: 1.25rem;
+        line-height: 2.1875rem;
+        letter-spacing: 0.1px;
+        color: var(--footer-heading);
+        padding: 0;
+    }
+
+    footer {
+        height: 500px; 
+    }
+
+    .footer {
+        position: relative;
+        top: 380px;   
+    }
 }
