@@ -404,4 +404,8 @@ li:last-child {
         position: relative;
         top: 380px;   
     }
+
+    span {
+        background-size: 300px;
+    }
 }
