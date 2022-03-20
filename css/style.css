@@ -132,7 +132,7 @@ header p {
 }
 
 span {
-    background: url(/assets/pattern-curved-line-1.svg);
+    background: url(../assets/pattern-curved-line-1.svg);
     background-repeat: no-repeat;
     background-size: 150px;
     padding-top: 25px;
